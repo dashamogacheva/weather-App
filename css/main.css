@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app {
+    width: 600px;
+    height: 435px;
+    border: 1px solid black;
+}
+
+.app-main {
+    display: flex;
+    justify-content: space-between;
+    height: 375px;
+}
+
+.app-left {
+    flex-basis: 50%;
+    border-right: 1px solid black;
+}
+
+.app-right {
+    flex-basis: 50%;
+}
+
+.form-search {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px 15px;
+}
+
+.input-city {
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.btn-search {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.screen {
+    height: 87%;
+    position: relative;
+    display: none;
+}
+
+.weather-icon {
+    margin: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-degree {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    font-size: 70px;
+}
+
+.screen-now {
+    padding: 20px;
+}
+
+.screen.active {
+    display: block;
+}
+
+.now-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.like {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.locations-title {
+    padding: 30px 0 5px 15px;
+}
+
+.border-title {
+    border-bottom: 1px solid black;
+}
+
+.locations-list {
+    display: block;
+    margin-top: 35px !important;
+    margin-left: 15px !important;
+    margin-right: 10px !important;
+}
+
+.location-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location:hover {
+    color: chocolate;
+    cursor: pointer;
+}
+
+.location.active {
+    color: chocolate;
+}
+
+.details {
+    display: block;
+    margin-top: 18px !important;
+    margin-left: 15px !important;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+.btn {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    height: 47px;
+    width: 101px;
+    border: none;
+
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn.active {
+    background-color: black;
+    color: white;
+}
+
+.btn-details {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Weather</title>
+</head>
+<body>
+<div class="main">
+    <div class="app">
+        <div class="app-header">
+            <form class="form-search">
+                <input class="input-city" placeholder="City"/>
+                <button type="submit" class="btn-search">
+                    <img src="./assets/icons/search.svg" alt="search">
+                </button>
+            </form>
+        </div>
+        <div class="app-main">
+            <div class="app-left">
+                <div class="screen screen-now active">
+                    <div class="weather-info">
+                        <div class="weather-degree">
+                            14°
+                        </div>
+                        <div class="weather-icon">
+                            <img class="weather-icon-src" src="./assets/weather-icons/01d.png" alt="weather icon">
+                        </div>
+                        <div class="now-bottom">
+                            <span class="city">Aktobe</span>
+                            <button class="like">
+                                <img src="./assets/icons/like.svg" alt="like icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="screen screen-details">
+                    <div class="weather-details">
+                        <div class="locations-title city">
+                            Actobe
+                        </div>
+                        <ul class="details">
+                            <li class="location-item temp">Temperature: 14°</li>
+                            <li class="location-item feels-like">Feels like: 10°</li>
+                            <li class="location-item weather">Weather: Clouds</li>
+                            <li class="location-item sunrise">Sunrise: 03:21</li>
+                            <li class="location-item sunset">Sunset: 18:54</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="screen screen-forecast">
+                    <div class="forecast">
+                        <div class="locations-title city">
+                            Actobe
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tabs">
+                    <button class="btn btn-now active">
+                        Now
+                    </button>
+                    <button class="btn btn-details">
+                        Details
+                    </button>
+                    <button class="btn btn-forecast">
+                        Forecast
+                    </button>
+                </div>
+            </div>
+            <div class="app-right">
+                <div class="locations-title border-title">
+                    Added Locations:
+                </div>
+                <ul class="locations-list">
+<!--                    <li class="location-item location">-->
+<!--                        <p>Amur</p>-->
+<!--                        <button class="like delete-city">-->
+<!--                            <img src="./assets/icons/close-icon.svg" alt="delete icon">-->
+<!--                        </button>-->
+<!--                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="./js/tabs.js"></script>
+<script type="module" src="./js/main.js"></script>
+<script type="module" src="./js/add-locations.js"></script>
+<!--<script type="module" src="./js/localStorage.js"></script>-->
+
+</body>
+</html>
